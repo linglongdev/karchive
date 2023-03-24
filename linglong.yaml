@@ -1,0 +1,27 @@
+package:
+  id: karchive
+  name: karchive
+  version: 5.54.0
+  kind: lib
+  description: |
+    karchive
+
+base:
+  id: org.deepin.base
+  version: 20.5.0
+
+depends:
+- id: qtbase
+  version: 5.11.3.15
+- id: qttools
+  version: 5.11.3
+
+source:
+  kind: git
+  url: https://github.com/deepin-community/karchive.git
+  version: master
+  commit: eb373c023b038e66cb4893b269b5824ccbef45e5
+
+  patch: []
+build:
+  kind: cmake
